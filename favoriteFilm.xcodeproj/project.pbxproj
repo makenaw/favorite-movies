@@ -15,6 +15,8 @@
 		F6F06A941C4E3C4500B47631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6F06A921C4E3C4500B47631 /* LaunchScreen.storyboard */; };
 		F6F06A9F1C4E3C4500B47631 /* favoriteFilmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F06A9E1C4E3C4500B47631 /* favoriteFilmTests.swift */; };
 		F6F06AAA1C4E3C4500B47631 /* favoriteFilmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F06AA91C4E3C4500B47631 /* favoriteFilmUITests.swift */; };
+		F6F06AB91C4E502600B47631 /* Film+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F06AB71C4E502600B47631 /* Film+CoreDataProperties.swift */; };
+		F6F06ABA1C4E502600B47631 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F06AB81C4E502600B47631 /* Film.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		F6F06AA51C4E3C4500B47631 /* favoriteFilmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = favoriteFilmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F06AA91C4E3C4500B47631 /* favoriteFilmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoriteFilmUITests.swift; sourceTree = "<group>"; };
 		F6F06AAB1C4E3C4500B47631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6F06AB71C4E502600B47631 /* Film+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Film+CoreDataProperties.swift"; path = "../Film+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F6F06AB81C4E502600B47631 /* Film.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Film.swift; path = ../Film.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +103,12 @@
 		F6F06A851C4E3C4500B47631 /* favoriteFilm */ = {
 			isa = PBXGroup;
 			children = (
+				F6F06ABD1C4E504000B47631 /* model */,
+				F6F06ABC1C4E503A00B47631 /* view */,
+				F6F06ABB1C4E503300B47631 /* controller */,
 				F6F06A861C4E3C4500B47631 /* AppDelegate.swift */,
 				F6F06A881C4E3C4500B47631 /* ViewController.swift */,
-				F6F06A8A1C4E3C4500B47631 /* Main.storyboard */,
 				F6F06A901C4E3C4500B47631 /* Assets.xcassets */,
-				F6F06A921C4E3C4500B47631 /* LaunchScreen.storyboard */,
 				F6F06A951C4E3C4500B47631 /* Info.plist */,
 				F6F06A8D1C4E3C4500B47631 /* favoriteFilm.xcdatamodeld */,
 			);
@@ -126,6 +131,31 @@
 				F6F06AAB1C4E3C4500B47631 /* Info.plist */,
 			);
 			path = favoriteFilmUITests;
+			sourceTree = "<group>";
+		};
+		F6F06ABB1C4E503300B47631 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		F6F06ABC1C4E503A00B47631 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F6F06A8A1C4E3C4500B47631 /* Main.storyboard */,
+				F6F06A921C4E3C4500B47631 /* LaunchScreen.storyboard */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		F6F06ABD1C4E504000B47631 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F6F06AB71C4E502600B47631 /* Film+CoreDataProperties.swift */,
+				F6F06AB81C4E502600B47631 /* Film.swift */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6F06ABA1C4E502600B47631 /* Film.swift in Sources */,
 				F6F06A8F1C4E3C4500B47631 /* favoriteFilm.xcdatamodeld in Sources */,
 				F6F06A891C4E3C4500B47631 /* ViewController.swift in Sources */,
 				F6F06A871C4E3C4500B47631 /* AppDelegate.swift in Sources */,
+				F6F06AB91C4E502600B47631 /* Film+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
