@@ -23,7 +23,7 @@
                                 <color key="backgroundColor" red="0.062745098039215685" green="0.0" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="3ST-4m-1L3">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FilmCell" rowHeight="100" id="3ST-4m-1L3" customClass="FilmViewCell" customModule="favoriteFilm" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="600" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3ST-4m-1L3" id="9mr-ru-uzv">
@@ -107,6 +107,11 @@
                                             </variation>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="filmDescription" destination="Pek-uo-9Mu" id="Gt5-Ik-731"/>
+                                            <outlet property="filmImage" destination="Bsl-hi-qQ0" id="Bew-xd-m27"/>
+                                            <outlet property="filmTitle" destination="Afj-AI-Xqw" id="7RR-MW-glk"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

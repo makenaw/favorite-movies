@@ -17,6 +17,7 @@
 		F6F06AAA1C4E3C4500B47631 /* favoriteFilmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F06AA91C4E3C4500B47631 /* favoriteFilmUITests.swift */; };
 		F6F06AB91C4E502600B47631 /* Film+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F06AB71C4E502600B47631 /* Film+CoreDataProperties.swift */; };
 		F6F06ABA1C4E502600B47631 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F06AB81C4E502600B47631 /* Film.swift */; };
+		F6F06ABF1C4E66D900B47631 /* FilmViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F06ABE1C4E66D900B47631 /* FilmViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		F6F06AAB1C4E3C4500B47631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6F06AB71C4E502600B47631 /* Film+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Film+CoreDataProperties.swift"; path = "../Film+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F6F06AB81C4E502600B47631 /* Film.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Film.swift; path = ../Film.swift; sourceTree = "<group>"; };
+		F6F06ABE1C4E66D900B47631 /* FilmViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 			children = (
 				F6F06A8A1C4E3C4500B47631 /* Main.storyboard */,
 				F6F06A921C4E3C4500B47631 /* LaunchScreen.storyboard */,
+				F6F06ABE1C4E66D900B47631 /* FilmViewCell.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			files = (
 				F6F06ABA1C4E502600B47631 /* Film.swift in Sources */,
 				F6F06A8F1C4E3C4500B47631 /* favoriteFilm.xcdatamodeld in Sources */,
+				F6F06ABF1C4E66D900B47631 /* FilmViewCell.swift in Sources */,
 				F6F06A891C4E3C4500B47631 /* ViewController.swift in Sources */,
 				F6F06A871C4E3C4500B47631 /* AppDelegate.swift in Sources */,
 				F6F06AB91C4E502600B47631 /* Film+CoreDataProperties.swift in Sources */,

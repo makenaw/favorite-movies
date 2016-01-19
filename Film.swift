@@ -8,10 +8,19 @@
 
 import Foundation
 import CoreData
+import UIKit
 
 
 class Film: NSManagedObject {
-
-// Insert code here to add functionality to your managed object subclass
+    
+    func setFilmImage(img: UIImage) {
+        let data = UIImagePNGRepresentation(img)
+        self.image = data
+    }
+    
+    func getFilmImage() -> UIImage {
+        let img = UIImage(data: self.image!)!
+        return img
+    }
 
 }
