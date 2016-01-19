@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -19,8 +20,25 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.dataSource = self
     }
     
+    override func viewDidAppear(animated: Bool) {
+        fetchAndSetResults()
+        tableView.reloadData()
+    }
+    
+    func fetchAndSetResults() {
+        let app = UIApplication.sharedApplication().delegate as! AppDelegate
+        let context = app.managedObjectContext
+        let fetchRequest = NSFetchRequest(entityName: "Film")
+        
+        do {
+            let results = try context.executeFetchRequest(fetchRequest)
+            self.films = results as! [Film]
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
+    }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return UITableViewCell()
         
         if let cell = tableView.dequeueReusableCellWithIdentifier("FilmCell") as? FilmViewCell {
             

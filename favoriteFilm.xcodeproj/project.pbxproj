@@ -18,6 +18,7 @@
 		F6F06AB91C4E502600B47631 /* Film+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F06AB71C4E502600B47631 /* Film+CoreDataProperties.swift */; };
 		F6F06ABA1C4E502600B47631 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F06AB81C4E502600B47631 /* Film.swift */; };
 		F6F06ABF1C4E66D900B47631 /* FilmViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F06ABE1C4E66D900B47631 /* FilmViewCell.swift */; };
+		F6F06AC11C4E700F00B47631 /* CreateFilmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F06AC01C4E700F00B47631 /* CreateFilmVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		F6F06AB71C4E502600B47631 /* Film+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Film+CoreDataProperties.swift"; path = "../Film+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F6F06AB81C4E502600B47631 /* Film.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Film.swift; path = ../Film.swift; sourceTree = "<group>"; };
 		F6F06ABE1C4E66D900B47631 /* FilmViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmViewCell.swift; sourceTree = "<group>"; };
+		F6F06AC01C4E700F00B47631 /* CreateFilmVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateFilmVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		F6F06ABB1C4E503300B47631 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				F6F06AC01C4E700F00B47631 /* CreateFilmVC.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6F06AC11C4E700F00B47631 /* CreateFilmVC.swift in Sources */,
 				F6F06ABA1C4E502600B47631 /* Film.swift in Sources */,
 				F6F06A8F1C4E3C4500B47631 /* favoriteFilm.xcdatamodeld in Sources */,
 				F6F06ABF1C4E66D900B47631 /* FilmViewCell.swift in Sources */,
