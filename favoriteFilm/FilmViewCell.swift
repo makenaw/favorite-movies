@@ -13,6 +13,7 @@ class FilmViewCell: UITableViewCell {
     @IBOutlet weak var filmTitle: UILabel!
     @IBOutlet weak var filmDescription: UILabel!
     @IBOutlet weak var filmImage: UIImageView!
+    @IBOutlet weak var filmurl: UILabel!
     
 
     override func awakeFromNib() {
@@ -22,8 +23,10 @@ class FilmViewCell: UITableViewCell {
     
     func configureCell(film: Film) {
         filmTitle.text = film.title
-        filmDescription.text = film.description
+        filmDescription.text = film.review
+        filmurl.text = film.imdburl
         filmImage.image = film.getFilmImage()
+        
     }
 
 
