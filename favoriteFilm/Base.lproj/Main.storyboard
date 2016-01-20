@@ -79,7 +79,7 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46g-Fe-b0a" userLabel="wholeCellBtn">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
                                                     <connections>
-                                                        <segue destination="xOf-vM-Wt9" kind="show" id="x7v-d1-5Wo"/>
+                                                        <segue destination="xOf-vM-Wt9" kind="show" id="8y9-a1-u1U"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Afj-AI-Xqw" userLabel="TitleLbl">
@@ -153,15 +153,15 @@
             </objects>
             <point key="canvasLocation" x="145" y="485"/>
         </scene>
-        <!--View Controller-->
+        <!--Film Detail Controller-->
         <scene sceneID="ZmT-2E-g1W">
             <objects>
-                <viewController id="xOf-vM-Wt9" sceneMemberID="viewController">
+                <viewController id="xOf-vM-Wt9" customClass="FilmDetailController" customModule="favoriteFilm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="szZ-Id-vbR"/>
                         <viewControllerLayoutGuide type="bottom" id="KXn-Va-A1R"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="v57-W5-r1X" customClass="FilmViewCell" customModule="favoriteFilm" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="v57-W5-r1X" customClass="UIImageView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -223,6 +223,13 @@
                             <constraint firstItem="efZ-Xh-pTn" firstAttribute="trailing" secondItem="v57-W5-r1X" secondAttribute="trailingMargin" id="zNe-Zj-fo2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="detailDescription" destination="edb-9h-03E" id="jwV-ny-R6g"/>
+                        <outlet property="detailIMDB" destination="SUb-pN-eHE" id="UvG-rN-pT7"/>
+                        <outlet property="detailImage" destination="KfN-UH-8d1" id="e9q-7l-gkG"/>
+                        <outlet property="detailPlot" destination="gEa-2J-3Ea" id="fTG-wS-pDa"/>
+                        <outlet property="detailTitle" destination="efZ-Xh-pTn" id="k1u-U7-bz0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lAq-Dw-yFn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
