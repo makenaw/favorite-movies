@@ -53,7 +53,7 @@
                                                     </variation>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IMDB link" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWd-YT-gCd" userLabel="IMDBLbl">
-                                                    <rect key="frame" x="107.5" y="85" width="387" height="14.5"/>
+                                                    <rect key="frame" x="107" y="85" width="387" height="14.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="387" id="Iw9-yV-A9G"/>
                                                     </constraints>
@@ -75,8 +75,11 @@
                                                         <constraint firstAttribute="height" constant="31" id="p07-Bc-oWv"/>
                                                     </constraints>
                                                     <state key="normal" image="tryangle"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46g-Fe-b0a" userLabel="wholeCellBtn">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
                                                     <connections>
-                                                        <segue destination="xOf-vM-Wt9" kind="show" id="deF-lW-sDm"/>
+                                                        <segue destination="xOf-vM-Wt9" kind="show" id="x7v-d1-5Wo"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Afj-AI-Xqw" userLabel="TitleLbl">
@@ -93,13 +96,17 @@
                                                 <constraint firstItem="Pek-uo-9Mu" firstAttribute="leading" secondItem="Bsl-hi-qQ0" secondAttribute="trailing" constant="30" id="3ZL-ut-R9X"/>
                                                 <constraint firstAttribute="bottom" secondItem="VWd-YT-gCd" secondAttribute="bottom" id="Dgl-RU-ZQu"/>
                                                 <constraint firstItem="izz-cn-WR0" firstAttribute="centerY" secondItem="Bsl-hi-qQ0" secondAttribute="centerY" id="EZH-0F-oY0"/>
+                                                <constraint firstAttribute="bottom" secondItem="46g-Fe-b0a" secondAttribute="bottom" id="FNH-hY-ScE"/>
                                                 <constraint firstItem="VWd-YT-gCd" firstAttribute="centerX" secondItem="Afj-AI-Xqw" secondAttribute="centerX" id="O6W-Cq-IiG"/>
                                                 <constraint firstItem="Pek-uo-9Mu" firstAttribute="centerY" secondItem="Bsl-hi-qQ0" secondAttribute="centerY" id="WVI-5D-y8c"/>
                                                 <constraint firstItem="Bsl-hi-qQ0" firstAttribute="leading" secondItem="9mr-ru-uzv" secondAttribute="leading" id="bNS-KO-N42"/>
                                                 <constraint firstItem="Afj-AI-Xqw" firstAttribute="centerX" secondItem="9mr-ru-uzv" secondAttribute="centerX" id="bY8-nQ-kSs"/>
                                                 <constraint firstItem="Afj-AI-Xqw" firstAttribute="top" secondItem="9mr-ru-uzv" secondAttribute="top" id="byC-nl-eWl"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Pek-uo-9Mu" secondAttribute="trailing" constant="37" id="cCN-FD-IKs"/>
+                                                <constraint firstAttribute="trailing" secondItem="46g-Fe-b0a" secondAttribute="trailing" id="dSM-dm-OZi"/>
+                                                <constraint firstItem="46g-Fe-b0a" firstAttribute="top" secondItem="9mr-ru-uzv" secondAttribute="top" id="g9J-NI-EoN"/>
                                                 <constraint firstItem="Pek-uo-9Mu" firstAttribute="leading" secondItem="Bsl-hi-qQ0" secondAttribute="trailing" constant="8" id="mLm-gW-HrT"/>
+                                                <constraint firstItem="46g-Fe-b0a" firstAttribute="leading" secondItem="9mr-ru-uzv" secondAttribute="leading" id="uBk-VF-6Vc"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="izz-cn-WR0" secondAttribute="trailing" constant="-33" id="wbj-Vf-oh0"/>
                                                 <constraint firstItem="Bsl-hi-qQ0" firstAttribute="centerY" secondItem="9mr-ru-uzv" secondAttribute="centerY" id="z8O-Fy-D93"/>
                                             </constraints>
