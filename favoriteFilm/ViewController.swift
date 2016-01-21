@@ -44,12 +44,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let film = films[indexPath.row]
+        
         if let cell = tableView.dequeueReusableCellWithIdentifier("FilmCell") as? FilmViewCell {
-            let film = films[indexPath.row]
             cell.configureCell(film)
             return cell
         } else {
-            return FilmViewCell()
+            let cell = FilmViewCell()
+            cell.configureCell(film)
+            return cell
         }
     }
     

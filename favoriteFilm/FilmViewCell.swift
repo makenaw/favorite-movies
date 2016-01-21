@@ -21,6 +21,12 @@ class FilmViewCell: UITableViewCell {
         // Initialization code
     }
     
+    override func setSelected(selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        
+        // Configure the view for the selected state
+    }
+    
     func configureCell(film: Film) {
         filmTitle.text = film.title
         filmDescription.text = film.review
