@@ -28,6 +28,10 @@ class DetailViewController: UIViewController {
         super.viewWillAppear(animated)
         //change values here
         detailtitle.text = film.title
+        plot.text = film.plot
+        desc.text = film.review
+        imdb.text = film.imdburl
+        image.image = film.getFilmImage()
         
     }
 

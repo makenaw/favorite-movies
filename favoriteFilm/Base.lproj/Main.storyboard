@@ -68,14 +68,6 @@
                                                         <constraint firstAttribute="width" constant="60" id="wWe-kK-OSV"/>
                                                     </constraints>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izz-cn-WR0" userLabel="arrowBtn">
-                                                    <rect key="frame" x="506" y="34" width="86" height="31"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="86" id="Umv-dF-pCF"/>
-                                                        <constraint firstAttribute="height" constant="31" id="p07-Bc-oWv"/>
-                                                    </constraints>
-                                                    <state key="normal" image="tryangle"/>
-                                                </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46g-Fe-b0a" userLabel="wholeCellBtn">
                                                     <rect key="frame" x="0.0" y="0.0" width="567" height="99.5"/>
                                                 </button>
@@ -92,7 +84,6 @@
                                             <constraints>
                                                 <constraint firstItem="Pek-uo-9Mu" firstAttribute="leading" secondItem="Bsl-hi-qQ0" secondAttribute="trailing" constant="30" id="3ZL-ut-R9X"/>
                                                 <constraint firstAttribute="bottom" secondItem="VWd-YT-gCd" secondAttribute="bottom" id="Dgl-RU-ZQu"/>
-                                                <constraint firstItem="izz-cn-WR0" firstAttribute="centerY" secondItem="Bsl-hi-qQ0" secondAttribute="centerY" id="EZH-0F-oY0"/>
                                                 <constraint firstAttribute="bottom" secondItem="46g-Fe-b0a" secondAttribute="bottom" id="FNH-hY-ScE"/>
                                                 <constraint firstItem="VWd-YT-gCd" firstAttribute="centerX" secondItem="Afj-AI-Xqw" secondAttribute="centerX" id="O6W-Cq-IiG"/>
                                                 <constraint firstItem="Pek-uo-9Mu" firstAttribute="centerY" secondItem="Bsl-hi-qQ0" secondAttribute="centerY" id="WVI-5D-y8c"/>
@@ -104,7 +95,6 @@
                                                 <constraint firstItem="46g-Fe-b0a" firstAttribute="top" secondItem="9mr-ru-uzv" secondAttribute="top" id="g9J-NI-EoN"/>
                                                 <constraint firstItem="Pek-uo-9Mu" firstAttribute="leading" secondItem="Bsl-hi-qQ0" secondAttribute="trailing" constant="8" id="mLm-gW-HrT"/>
                                                 <constraint firstItem="46g-Fe-b0a" firstAttribute="leading" secondItem="9mr-ru-uzv" secondAttribute="leading" id="uBk-VF-6Vc"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="izz-cn-WR0" secondAttribute="trailing" constant="-33" id="wbj-Vf-oh0"/>
                                                 <constraint firstItem="Bsl-hi-qQ0" firstAttribute="centerY" secondItem="9mr-ru-uzv" secondAttribute="centerY" id="z8O-Fy-D93"/>
                                             </constraints>
                                             <variation key="default">
@@ -399,6 +389,5 @@
         <image name="ex" width="24" height="25"/>
         <image name="rec" width="28" height="29"/>
         <image name="starwars" width="277" height="182"/>
-        <image name="tryangle" width="32" height="31"/>
     </resources>
 </document>
