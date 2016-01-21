@@ -25,6 +25,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.reloadData()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        films = Film.getAll()
+        tableView.reloadData()
+    }
+    
     func fetchAndSetResults() {
         let app = UIApplication.sharedApplication().delegate as! AppDelegate
         let context = app.managedObjectContext
@@ -39,16 +44,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
         if let cell = tableView.dequeueReusableCellWithIdentifier("FilmCell") as? FilmViewCell {
-            
             let film = films[indexPath.row]
             cell.configureCell(film)
             return cell
         } else {
             return FilmViewCell()
         }
-        
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -59,7 +61,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return films.count
     }
 
-
-
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let film = films[indexPath.row]
+        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        let jared = storyboard.instantiateViewControllerWithIdentifier("filmer") as! DetailViewController
+        jared.film = film
+        
+        navigationController?.pushViewController(jared, animated: true)
+    }
 }
 

@@ -22,5 +22,19 @@ class Film: NSManagedObject {
         let img = UIImage(data: self.image!)!
         return img
     }
+    
+    static func getAll () -> [Film] {
+        let app = UIApplication.sharedApplication().delegate as! AppDelegate
+        let context = app.managedObjectContext
+        
+        let fetchReq = NSFetchRequest(entityName: "Film")
+        
+        do {
+            return try context.executeFetchRequest(fetchReq) as! [Film]
+        } catch let e as NSError {
+            print(e.debugDescription)
+            return [Film]()
+        }
+    }
 
 }

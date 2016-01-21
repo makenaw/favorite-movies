@@ -78,9 +78,6 @@
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46g-Fe-b0a" userLabel="wholeCellBtn">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
-                                                    <connections>
-                                                        <segue destination="xOf-vM-Wt9" kind="show" id="8y9-a1-u1U"/>
-                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Afj-AI-Xqw" userLabel="TitleLbl">
                                                     <rect key="frame" x="96" y="0.0" width="409.5" height="20.5"/>
@@ -153,10 +150,10 @@
             </objects>
             <point key="canvasLocation" x="145" y="485"/>
         </scene>
-        <!--Film Detail Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="ZmT-2E-g1W">
             <objects>
-                <viewController id="xOf-vM-Wt9" customClass="FilmDetailController" customModule="favoriteFilm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="filmer" id="xOf-vM-Wt9" customClass="DetailViewController" customModule="favoriteFilm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="szZ-Id-vbR"/>
                         <viewControllerLayoutGuide type="bottom" id="KXn-Va-A1R"/>
@@ -165,20 +162,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starwars" translatesAutoresizingMaskIntoConstraints="NO" id="KfN-UH-8d1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="starwars" translatesAutoresizingMaskIntoConstraints="NO" id="KfN-UH-8d1">
                                 <rect key="frame" x="175" y="107" width="250" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="Af8-vA-IGC"/>
                                     <constraint firstAttribute="height" constant="250" id="o5a-0Q-gYB"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efZ-Xh-pTn" userLabel="TitleLbl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efZ-Xh-pTn" userLabel="TitleLbl">
                                 <rect key="frame" x="20" y="64" width="560" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.77647058820000003" green="0.85098039219999999" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edb-9h-03E" userLabel="descriptionLbl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edb-9h-03E" userLabel="descriptionLbl">
                                 <rect key="frame" x="20" y="340" width="560" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="Mgw-kf-w79"/>
@@ -187,7 +184,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEa-2J-3Ea" userLabel="descriptionLbl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEa-2J-3Ea" userLabel="descriptionLbl">
                                 <rect key="frame" x="20" y="446" width="560" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="67R-Kt-RwX"/>
@@ -224,11 +221,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="detailDescription" destination="edb-9h-03E" id="jwV-ny-R6g"/>
-                        <outlet property="detailIMDB" destination="SUb-pN-eHE" id="UvG-rN-pT7"/>
-                        <outlet property="detailImage" destination="KfN-UH-8d1" id="e9q-7l-gkG"/>
-                        <outlet property="detailPlot" destination="gEa-2J-3Ea" id="fTG-wS-pDa"/>
-                        <outlet property="detailTitle" destination="efZ-Xh-pTn" id="k1u-U7-bz0"/>
+                        <outlet property="desc" destination="edb-9h-03E" id="Oak-Il-UBP"/>
+                        <outlet property="detailtitle" destination="efZ-Xh-pTn" id="ejv-PI-ELA"/>
+                        <outlet property="image" destination="KfN-UH-8d1" id="Mul-yZ-h5B"/>
+                        <outlet property="imdb" destination="SUb-pN-eHE" id="NMQ-dG-ETQ"/>
+                        <outlet property="plot" destination="gEa-2J-3Ea" id="Gf5-WI-PcW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lAq-Dw-yFn" userLabel="First Responder" sceneMemberID="firstResponder"/>

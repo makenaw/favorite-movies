@@ -19,15 +19,8 @@ class FilmDetailController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        func configureCell(film: Film) {
-            detailTitle.text = film.title
-            detailDescription.text = film.review
-            detailIMDB.text = film.imdburl
-            detailImage.image = film.getFilmImage()
-            
-        }
-
     }
+    
+    
 
 }
