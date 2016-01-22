@@ -23,6 +23,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidAppear(animated: Bool) {
         fetchAndSetResults()
         tableView.reloadData()
+        
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        imageView.contentMode = .ScaleAspectFit
+        let image = UIImage(named: "film")
+        imageView.image = image
+        navigationItem.titleView = imageView
     }
     
     override func viewWillAppear(animated: Bool) {
