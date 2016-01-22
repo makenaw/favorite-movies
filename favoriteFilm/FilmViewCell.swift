@@ -12,7 +12,7 @@ class FilmViewCell: UITableViewCell {
     
     @IBOutlet weak var filmTitle: UILabel!
     @IBOutlet weak var filmDescription: UILabel!
-    @IBOutlet weak var filmImage: UIImageView!
+    @IBOutlet weak var filmImage: RoundedImage!
     @IBOutlet weak var filmurl: UILabel!
     
 

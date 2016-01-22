@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F6592C3F1C50E62A000A901C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6592C3E1C50E62A000A901C /* DetailViewController.swift */; };
+		F666B5BE1C51EDB8007F07A5 /* roundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666B5BD1C51EDB8007F07A5 /* roundedImage.swift */; };
 		F6F06A871C4E3C4500B47631 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F06A861C4E3C4500B47631 /* AppDelegate.swift */; };
 		F6F06A891C4E3C4500B47631 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F06A881C4E3C4500B47631 /* ViewController.swift */; };
 		F6F06A8C1C4E3C4500B47631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6F06A8A1C4E3C4500B47631 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		F6592C3E1C50E62A000A901C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F666B5BD1C51EDB8007F07A5 /* roundedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = roundedImage.swift; sourceTree = "<group>"; };
 		F6F06A831C4E3C4500B47631 /* favoriteFilm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = favoriteFilm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F06A861C4E3C4500B47631 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6F06A881C4E3C4500B47631 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				F6F06A8A1C4E3C4500B47631 /* Main.storyboard */,
 				F6F06A921C4E3C4500B47631 /* LaunchScreen.storyboard */,
 				F6F06ABE1C4E66D900B47631 /* FilmViewCell.swift */,
+				F666B5BD1C51EDB8007F07A5 /* roundedImage.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F666B5BE1C51EDB8007F07A5 /* roundedImage.swift in Sources */,
 				F6592C3F1C50E62A000A901C /* DetailViewController.swift in Sources */,
 				F6F06AC11C4E700F00B47631 /* CreateFilmVC.swift in Sources */,
 				F6F06ABA1C4E502600B47631 /* Film.swift in Sources */,
