@@ -38,6 +38,10 @@ class CreateFilmVC: UIViewController, UIImagePickerControllerDelegate, UINavigat
         presentViewController(imagePicker, animated: true, completion: nil)
     }
     
+    @IBAction func onCancelBtnPressed (sender: UIButton) {
+        navigationController?.popViewControllerAnimated(true)
+    }
+    
     @IBAction func onSaveBtnPressed (sender: AnyObject!) {
         if let title = filmTitle.text where title != "" {
             let app = UIApplication.sharedApplication().delegate as! AppDelegate

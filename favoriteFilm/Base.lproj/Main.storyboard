@@ -283,6 +283,9 @@
                                     <constraint firstAttribute="height" constant="25" id="dS4-Fj-I0k"/>
                                 </constraints>
                                 <state key="normal" image="ex"/>
+                                <connections>
+                                    <action selector="onCancelBtnPressed:" destination="70k-wc-fuX" eventType="touchUpInside" id="nAx-08-Orl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Mx-OT-JSh">
                                 <rect key="frame" x="402" y="555" width="78" height="25"/>
